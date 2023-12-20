@@ -10,7 +10,8 @@
     .hero-sec {
         padding: 50px 0;
     }
-    .prof-name{
+
+    .prof-name {
         margin: 0 2rem;
     }
 
@@ -30,7 +31,7 @@
         left: 5%;
     }
 
-   
+
 
     .social-connet li {
         width: 100%;
@@ -40,6 +41,7 @@
         margin-bottom: 50px;
         padding-top: 1rem;
     }
+
     .contact-form {
         padding-top: 1rem;
     }
@@ -47,25 +49,36 @@
     .skill-card {
         height: 18rem;
     }
-    .card-end{
+
+    .skill-card img {
+        padding: 40px;
+    }
+
+    .card-end {
         display: flex;
         justify-content: end;
     }
-    .company-card{
+
+    .company-card {
         width: 90%;
     }
-    .comp-logo img{
+
+    .comp-logo img {
         margin: 0;
     }
+
     .comp-text h5 a {
         font-size: 18px;
     }
+
     .comp-text h5 span {
         font-size: 12px;
     }
-    .company-card::after{
+
+    .company-card::after {
         left: -5%;
     }
+
     .company-card::before {
         top: 23%;
         left: -11%;
@@ -80,17 +93,21 @@
     .menu li a {
         font-size: 0.7rem;
     }
+
     .logo-name h4 {
         font-size: 1rem;
     }
+
     .btn-cv a {
         border: 2px solid var(--primary);
         padding: 2px 6px;
     }
+
     .hero-sec {
         padding: 50px 0;
         background-size: cover;
     }
+
     .follow-me {
         position: fixed;
         top: 10%;
@@ -98,16 +115,19 @@
         animation: follow 4s linear infinite;
     }
 
-    .work-period h5 span{
+    .work-period h5 span {
         font-size: 12px;
     }
-    .work-line::before{
+
+    .work-line::before {
         left: 30%;
     }
-    .company-card::after{
+
+    .company-card::after {
         left: -5%;
     }
-    .company-card::before{
+
+    .company-card::before {
         top: 24%;
         left: -11.6%;
         height: 25px;
@@ -115,6 +135,7 @@
         padding: 4px 6px;
         font-size: 12px;
     }
+
     .company-card {
         margin-top: 4rem;
     }

@@ -31,11 +31,17 @@ $(window).scroll(function () {
 $(document).ready(function () {
   $(".menu-icon i").click(function () {
     $(".mobile-navbar").show()
+    $(".menu-icon i").hide()
+    $("body").css("overflow" , "hidden")
   })
   $(".cros-icon").click(function () {
     $(".mobile-navbar").hide()
+    $(".menu-icon i").show()
+    $("body").css("overflow" , "visible")
   })
   $(".mob-menu li a").click(function () {
     $(".mobile-navbar").hide()
+    $(".menu-icon i").show()
+    $("body").css("overflow" , "visible")
   })
 })

@@ -442,7 +442,8 @@ header {
     left: 2%;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(1, 210, 147, 1) 0%, rgba(213, 0, 164, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(1, 210, 147, 1) 0%, rgba(213, 0, 164, 1) 100%); */
+    background-color: #dd116c;
     border-radius: 10px 10px 0 0;
     transition: all 0.7s;
 }
@@ -454,7 +455,8 @@ header {
     right: 1%;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(213, 0, 164, 1) 0%, rgba(1, 210, 147, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(213, 0, 164, 1) 0%, rgba(1, 210, 147, 1) 100%); */
+    background-color: #dd116c;
     border-radius: 0 0 10px 10px;
     transition: all 0.7s;
 }
@@ -469,7 +471,7 @@ header {
 
 .skill-card img {
     width: 60%;
-    padding: 20px;
+    padding: 30px;
     transition: all 1s;
 }
 
