@@ -10,8 +10,7 @@
     .hero-sec {
         padding: 50px 0;
     }
-
-    .prof-name {
+    .prof-name{
         margin: 0 2rem;
     }
 
@@ -31,7 +30,7 @@
         left: 5%;
     }
 
-
+   
 
     .social-connet li {
         width: 100%;
@@ -41,7 +40,6 @@
         margin-bottom: 50px;
         padding-top: 1rem;
     }
-
     .contact-form {
         padding-top: 1rem;
     }
@@ -49,36 +47,25 @@
     .skill-card {
         height: 18rem;
     }
-
-    .skill-card img {
-        padding: 40px;
-    }
-
-    .card-end {
+    .card-end{
         display: flex;
         justify-content: end;
     }
-
-    .company-card {
+    .company-card{
         width: 90%;
     }
-
-    .comp-logo img {
+    .comp-logo img{
         margin: 0;
     }
-
     .comp-text h5 a {
         font-size: 18px;
     }
-
     .comp-text h5 span {
         font-size: 12px;
     }
-
-    .company-card::after {
+    .company-card::after{
         left: -5%;
     }
-
     .company-card::before {
         top: 23%;
         left: -11%;
@@ -87,27 +74,30 @@
         height: 25px;
         width: 25px;
     }
+    .company-cardLeft::after{
+        right: 100%;
+        border-color: transparent #1d2a57 transparent transparent;
+    }
+    .company-cardLeft {
+        box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
     .menu li a {
         font-size: 0.7rem;
     }
-
     .logo-name h4 {
         font-size: 1rem;
     }
-
     .btn-cv a {
         border: 2px solid var(--primary);
         padding: 2px 6px;
     }
-
     .hero-sec {
         padding: 50px 0;
         background-size: cover;
     }
-
     .follow-me {
         position: fixed;
         top: 10%;
@@ -115,19 +105,16 @@
         animation: follow 4s linear infinite;
     }
 
-    .work-period h5 span {
+    .work-period h5 span{
         font-size: 12px;
     }
-
-    .work-line::before {
-        left: 30%;
+    .work-line::before{
+        left: 0%;
     }
-
-    .company-card::after {
-        left: -5%;
+    .company-card::after{
+        left: -3%;
     }
-
-    .company-card::before {
+    .company-card::before{
         top: 24%;
         left: -11.6%;
         height: 25px;
@@ -135,7 +122,13 @@
         padding: 4px 6px;
         font-size: 12px;
     }
-
+    .company-cardLeft::after{
+        border-color: transparent #1d2a57 transparent transparent;
+        right: 100%;
+    }
+    .company-cardLeft {
+        box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
+    }
     .company-card {
         margin-top: 4rem;
     }
@@ -143,4 +136,5 @@
     .social-connet li {
         width: 100%;
     }
+>>>>>>> master
 }
