@@ -74,6 +74,13 @@
         height: 25px;
         width: 25px;
     }
+    .company-cardLeft::after{
+        right: 100%;
+        border-color: transparent #1d2a57 transparent transparent;
+    }
+    .company-cardLeft {
+        box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -102,10 +109,10 @@
         font-size: 12px;
     }
     .work-line::before{
-        left: 30%;
+        left: 0%;
     }
     .company-card::after{
-        left: -5%;
+        left: -3%;
     }
     .company-card::before{
         top: 24%;
@@ -114,6 +121,13 @@
         width: 25px;
         padding: 4px 6px;
         font-size: 12px;
+    }
+    .company-cardLeft::after{
+        border-color: transparent #1d2a57 transparent transparent;
+        right: 100%;
+    }
+    .company-cardLeft {
+        box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
     }
     .company-card {
         margin-top: 4rem;

@@ -435,37 +435,6 @@ header {
     height: 13rem;
 }
 
-.skill-card::before {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 2%;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, rgba(1, 210, 147, 1) 0%, rgba(213, 0, 164, 1) 100%);
-    border-radius: 10px 10px 0 0;
-    transition: all 0.7s;
-}
-
-.skill-card::after {
-    position: absolute;
-    content: "";
-    bottom: 0px;
-    right: 1%;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, rgba(213, 0, 164, 1) 0%, rgba(1, 210, 147, 1) 100%);
-    border-radius: 0 0 10px 10px;
-    transition: all 0.7s;
-}
-
-.skill-card:hover::before {
-    width: 97%;
-}
-
-.skill-card:hover::after {
-    width: 97%;
-}
 
 .skill-card img {
     width: 60%;
@@ -547,10 +516,11 @@ header {
     position: absolute;
     content: "";
     top: 0;
-    left: 27%;
+    left: 50%;
     width: 5px;
     height: 100%;
     background-color: #333c42;
+    transform: translate(50%, 0%);
 }
 
 .work-period h5 span {
@@ -558,21 +528,38 @@ header {
     font-size: 15px;
 }
 
+.card-end{
+    display: flex;
+    justify-content: center;
+}
 .company-card {
     background-color: var(--secundry);
     padding: 1.3rem;
     border-radius: 10px;
-    box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
     position: relative;
     margin-top: 3rem;
+    width: 85%;
+}
+.company-cardRight{
+    box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
 }
 
-.company-card::before {
+
+.company-cardRight::after {
+    position: absolute;
+    content: "";
+    top: 25%;
+    left: -3%;
+    border: 10px solid;
+    border-color: transparent #1d2a57 transparent transparent;
+}
+
+.company-cardRight::before{
     position: absolute;
     content: "\f1cc";
     font-family: bootstrap-icons !important;
     top: 18%;
-    left: -15.6%;
+    left: -14%;
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -582,13 +569,30 @@ header {
     font-weight: bold;
 }
 
-.company-card::after {
+.company-cardLeft{
+    box-shadow: rgb(255 255 255 / 28%) -6px 6px 10px;
+}
+.company-cardLeft::after{
     position: absolute;
     content: "";
     top: 25%;
-    left: -3%;
+    right: -4%;
     border: 10px solid;
-    border-color: transparent #1d2a57 transparent transparent;
+    border-color: transparent  transparent  transparent #1d2a57;
+}
+.company-cardLeft::before{
+    position: absolute;
+    content: "\f1cc";
+    font-family: bootstrap-icons !important;
+    top: 18%;
+    right: -16%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: var(--secundry);
+    color: var(--primary);
+    padding: 6px 10px;
+    font-weight: bold;
 }
 
 
